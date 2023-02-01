@@ -97,7 +97,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    public <T extends Exception> void sendError(T e) {
+    public <T extends LuaJitException> void sendError(T e) {
         TextView tv = new TextView(this);
         tv.setText(((Exception) e).toString());
         setContentView(tv);
